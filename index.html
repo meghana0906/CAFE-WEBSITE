@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aroma Cafe</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+  <a href="#" class ="logo">
+     <img src="https://img.freepik.com/free-photo/cup-coffee-with-heart-drawn-foam_1286-70.jpg?1&w=900&t=st=1696879855~exp=1696880455~hmac=a0f3adecb1ebbae340fffaf00b05ffbc0bcb36a1c96ecdb2482a42eb1b99172b" alt="">
+  </a>
+  <nav class="navbar">
+     <a href="#home">Home</a>
+     <a href="#about">About</a>
+     <a href="#menu">Menu</a>
+     <a href="#contact">Contact us</a>
+  </nav>
+<div class="icons">
+  <div class="fas fa-search" id="search-btn"></div>
+  <div class="fas fa-shopping-cart" id="cart-btn"></div>
+  <div class="fas fa-bars" id="menu-btn"></div>
+</div>
+<div class="search-form">
+  <input type="search" id="search-box" placeholder="Search">
+  <label for="search-box" class="fas fa-search"></label>
+</div>
+<div class="cart-items-container">
+  <div class="cart-item">
+  <span class="fas fa-times"></span>
+  <img src="img/cart-01.webp" alt="">
+  <div class="content">
+     <h3>Vanilla Extract</h3>
+     <div class="price">₹1000/-</div>
+  </div>
+</div>
+  <div class="cart-item">
+     <span class="fas fa-times"></span>
+     <img src="img/teadust.jpeg" alt="">
+     <div class="content">
+        <h3>Green Tea Packets</h3>
+        <div class="price">₹400/-</div>
+     </div>
+</div>
+     <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="img/coffee.jpeg" alt="">
+        <div class="content">
+            <h3>Filter Coffee Extract</h3>
+            <div class="price">₹1500/-</div>
+        </div>
+     </div>
+     <a href="#" class="btn">Products</a>
+   </div>
+  </header>
+  <section class="home" id="home">
+
+<div class="container">
+  <img src="https://www.pixelstalk.net/wp-content/uploads/2016/05/Coffee-Wallpapers-High-Quality.jpg" alt="image" width=100% height=100%>
+  <div class="text-block">
+    <h4 style="font-size:40px;">AROMA</h4>
+    <p style="font-size:35px;">Sip your Saviour Now</p>
+  </div>
+</div>
+  </section>
+  <section class="about" id="about">
+     <h1 class="heading"><span>About us</span></h1>
+     <div class="row">
+         <div class="image">
+            <img src="https://aeropress.com/cdn/shop/articles/Cuban-coffee-cup-on-wooden-table_960x.jpg?v=1677542138" alt="image" style="float:left;width:500px;height:500px;">
+         </div>
+         <div class="content"><pre>
+   <p style="color:white;font-family:Lucida Calligraphy;font-size:32px;">     Aroma Cafe</p>
+   <p style="color:white;font-family:Lucida Calligraphy;font-size:25px;">    This is a start-up company by young aspiring food engineers
+    who are specialised in making various kinds of aromatic and 
+    energetic coffees. We serve a range of coffees from the finest
+    coffee beans, roasted here in our cafe. Our cafe is a perfect 
+    "hangout" spot where you can meet new people and make 
+    conversations, and have a whole lot of fun over steaming cups
+    of coffee. Our mission is to ensure that every guest experiences
+    genuine and sincere customer service that warms their heart 
+    and make them feel better. Most importantly "We serve with 
+    love and passion".<br>    Let us flutter your heart.</pre><br><br><br><br></p>
+         </div>
+     </div>
+  </section>
+  <section class="menu" id="menu">
+     <h1 class="heading"><span>Menu</span></h1>
+     <div class="box-container">
+    <style>    
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+	flex-basis:100%;
+        justify-content: center;
+	life-style:none;
+    }
+
+    .product {
+        flex: 1;
+        width: 350px;
+        background-color: black;
+        border: 2px solid white;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        border-radius:10px;
+    }
+    .product:hover {
+        transform: scale(1.2);
+    }
+
+    .product img {
+        max-width: 100%;
+	max-width: 100%;
+        border-radius:15px;
+        border:2px solid white;
+    }
+
+    select {
+        width: 100%;
+        padding: 5px;
+    }
+    button
+    {
+    background-color:#FFA000;
+    border-radius:10px;
+    border:1px solid white;
+    padding: 5px 15px;
+}
+button:hover
+{
+    background-color:#FFCA28;
+
+}
+
+
+#contact {
+ padding: 5rem 0;
+ background: rgb(0,0,0);
+}
+
+.contact-img img {
+ display: block;
+ height: 400px;
+ width: 100%;
+ object-position: center;
+ object-fit: cover;
+}
+.form-container {
+ background: rgb(0,0,0);
+ padding: 1rem;
+ width: 50%;
+ margin: auto;
+}
+.form-container input {
+ display: block;
+ width: 70%;
+
+ border:1px solid white;
+ background:#000000;
+ padding: 1rem 0;
+ box-shadow: none;
+ outline: none;
+ margin-bottom: 1rem;
+ color: #ffffff;
+ font-weight: 500;
+}
+.form-container textarea {
+ display: block;
+ border:1px solid white;
+ width: 70%;
+ outline:none
+ color: #ffffff;
+background:#000000;
+ 
+ padding: 1rem 0;
+resize: none;
+}
+.form-container h2 {
+ font-size: 3.7rem;
+ font-weight: 500;
+ color: #ffffff;
+ margin-bottom: 1rem;
+ margin-top: -1.2rem;
+}
+.form-container a {
+ font-size: 1.2rem;
+}
+
+</style>
+
+    <div class="product-list">
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.qZ1mImZJBLcsB9zUOuRaxQHaHa&pid=Api&P=0&h=180" alt="Apples" >
+          
+            
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Capuccino</p>
+            <p style="color:white;font-size:20px">Price: ₹200</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.9tbjJr_9BSj7GrliLANutwHaFr&pid=Api&P=0&h=180" alt="Apples" >
+          
+            
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Americano</p>
+            <p style="color:white;font-size:20px">Price: ₹185</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.nespresso.com/shared_res/mosaic_freehtml/images/coffees/ranges/espresso/big_cup.png" alt="Apples" >
+            <p style="color:white;font-family:Brush Script MT;font-size:50px">Espresso</p>
+            <p style="color:white;font-size:20px">Price: ₹175</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.k6HrjsWU1C995rHH4dQVmAHaF1&pid=Api&P=0&h=180" alt="Apples" >
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Mocha</p>
+            <p style="color:white;font-size:20px">Price: ₹270</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+</div>
+<div class="product-list">
+        <div class="product">
+            <img src="https://www.thespruceeats.com/thmb/-UfE2v2N3FMSt_ciwNnIVySxgZA=/3669x2446/filters:fill(auto,1)/how-to-make-caffe-latte-765372-Hero-5bbe0901c9e77c0026bf07c4.jpg" alt="Apples" >
+          
+            
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Latte</p>
+            <p style="color:white;font-size:20px">Price: ₹225</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.mamablip.com/ir/800/storage/caffe-freddo-shakerato_2615323_3511626098779.jpg" alt="Apples" >
+          
+            
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Shakerato</p>
+            <p style="color:white;font-size:20px">Price: ₹220</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.coffeefriend.co.uk/app/uploads/2021/01/Frappe-virselis.jpg" alt="Apples" >
+          
+            
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Frappe</p>
+            <p style="color:white;font-size:20px">Price: ₹195</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse4.explicit.bing.net/th?id=OIP.kXpuTKvjpi1XiivsiEuX8AHaE7&pid=Api&P=0&h=180" alt="Apples" >          
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Irish Coffee</p>
+            <p style="color:white;font-size:20px">Price: ₹240</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div></div>
+<div class="product-list">
+        <div class="product">
+            <img src="https://mlouf9xgeg8k.i.optimole.com/J7N7uTo-xYNa7cuq/w:980/h:531/q:auto/https://espressoandmachine.com/wp-content/uploads/2021/01/What-Is-a-Caffe-Breve-1.jpg" alt="Apples" >          
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Breve Coffee</p>
+            <p style="color:white;font-size:20px">Price: ₹195</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://thefinestroast.com/wp-content/uploads/2021/08/dead-eye-coffee-1020x600.jpg" alt="Apples" >          
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Dead Eye</p>
+            <p style="color:white;font-size:20px">Price: ₹300</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="http://4.bp.blogspot.com/-8UjxuQmAVjc/UdSeMPkqFSI/AAAAAAAAKjo/zWtyNu7heVs/s1600/IMG_4015+foto+11.JPG" alt="Apples" >          
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Mazagran</p>
+            <p style="color:white;font-size:20px">Price: ₹280</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.oXKHvGjRwAuE9T26BwZIqwHaE3&pid=Api&P=0&h=180" alt="Apples" >          
+                <p style="color:white;font-family:Brush Script MT;font-size:50px">Affogato</p>
+            <p style="color:white;font-size:20px">Price: ₹270</p><br>
+            <button style="color:white;">Add to Cart</button>
+        </div>
+    </div>
+     </div>
+   </section>
+   <section id="contact">
+ 
+ <div class="form-container">
+ <h2><pre>              Contact Us</pre></h2>
+ <input type="text" placeholder="Your Name" />
+ <input type="email" placeholder="E-Mail" />
+ <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea><br>
+ <pre>                                                                                    <button type="button" style="color:white;" >SUBMIT</button></pre>
+
+ </div>
+</section>
+<!-- .................../ JS Code for smooth scrolling /...................... -->
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>
+          
+ 
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
